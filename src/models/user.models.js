@@ -31,7 +31,6 @@ const userSchema = new Schema(
     },
     coverImage: {
       type: String, //cloudnary,
-      required: true,
     },
     watchHistory: [
       {
@@ -43,7 +42,7 @@ const userSchema = new Schema(
       type: String,
       required: [true, "Password is required"],
     },
-    accessToken: {
+    refreshToken: {
       type: String,
     },
   },
